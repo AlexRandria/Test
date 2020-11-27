@@ -1,5 +1,6 @@
 <?php
-// variable
+// VARIABLES
+
 // les types
 //declare(strict_types=1);
 
@@ -13,6 +14,8 @@
 // $array2 = [1, "Jean", 2];
 
 // var_dump($array2);
+
+//------------------------------------------------------------------------------------
 
 // OPERATEURS + - * / % arithmétique,
 // echo 9 % 4; // 9 = 4 * 2 + 1, return 1
@@ -35,6 +38,8 @@
 // $b = 2;
 // if($a > 2 && $b < 5) {} // && est prioritaire a 
 
+//------------------------------------------------------------------------------------
+
 // STRUCTURE de controle if else, boucles, switch
 // $var = 1;
 // switch($var){
@@ -53,6 +58,7 @@
 // $b = 1;
 // echo (($a > $b) ? "cas 1" : "cas 2") ;
 
+//------------------------------------------------------------------------------------
 
 // FONCTIONS en PHP
 // function add(int $a, int $b): int {
@@ -71,6 +77,8 @@
 
 // inc($a);
 // echo ' '.$a;
+
+//------------------------------------------------------------------------------------
 
 // les tableaux, JSON
 // taleaux indexés
@@ -109,6 +117,8 @@ echo $$action; */
 
 // VOIR DATATABLES
 
+//------------------------------------------------------------------------------------
+
 // JSON
 // $array = array('prenom' => 'Alex', 'nom' => 'Randria');
 // echo json_encode($array);
@@ -122,6 +132,8 @@ echo $$action; */
 // $str = serialize($array);
 // echo $str;
 
+//------------------------------------------------------------------------------------
+
 // LES DATES
 // $da = date('Y-m-d H:i:s');
 // $timestamp = strtotime('now');
@@ -130,12 +142,29 @@ echo $$action; */
 // $d = new DateTime($da, new DateTimezone('Europe/London'));
 // var_dump($d->getTimezone()->getName());
 
+//------------------------------------------------------------------------------------
+
 // SUPERGLOBAL SESSION; GET, POST, SERVER
+// Dans les autres fichiers
 
+//------------------------------------------------------------------------------------
 
-// Fichiers I/O
+// FICHIERS I/O
+// readfile('test.php');
+// die();
+
+// $handle = fopen('test.txt','r');
+// $content = fread($handle,filesize('test.txt'));
+// echo $content;
+
+$output = `git add .`;
+var_dump($output);
+
+//------------------------------------------------------------------------------------
 
 // Regex
+
+//------------------------------------------------------------------------------------
 
 // POO
 // gestion des erreurs try/catch
