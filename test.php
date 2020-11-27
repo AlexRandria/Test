@@ -59,6 +59,18 @@
 //     return $a + $b;
 // }
 // echo add($a, $b);
+// $a = 2;
+// $input = array("a","b");
+// $output = array_slice($input, 0, 1);
+// print_r($output);
+// die();
+// function inc(&$toto) {
+//     $toto++;
+//     echo $toto;
+// }
+
+// inc($a);
+// echo ' '.$a;
 
 // les tableaux, JSON
 // taleaux indexés
@@ -92,13 +104,35 @@ echo $$action; */
 // }
 
 // FONCTION Tableau
-$str = "Un renard tres malin court";
-print_r(explode(' ', $str));
+// $str = "Un renard tres malin court";
+// print_r(explode(' ', $str));
+
+// VOIR DATATABLES
 
 // JSON
-// les dates
+// $array = array('prenom' => 'Alex', 'nom' => 'Randria');
+// echo json_encode($array);
 
-// superglobal SESSION; GET, POST, SERVER
+// $string = '{"prenom":"Alex","nom":"Randria"}';
+// print_r(json_decode($string));
+
+// Serialization / Deserialization
+// Transformer un objet en chaînes de caractères, pour par exemple stocker en base de données
+// $array = array('prenom' => 'Alex', 'nom' => 'Randria');
+// $str = serialize($array);
+// echo $str;
+
+// LES DATES
+// $da = date('Y-m-d H:i:s');
+// $timestamp = strtotime('now');
+// echo date('d-m-Y', $timestamp);
+
+// $d = new DateTime($da, new DateTimezone('Europe/London'));
+// var_dump($d->getTimezone()->getName());
+
+// SUPERGLOBAL SESSION; GET, POST, SERVER
+
+
 // Fichiers I/O
 
 // Regex
